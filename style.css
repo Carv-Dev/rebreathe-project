@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+:root {
+    --gradient_linear: linear-gradient(
+        #2b13ef,
+        #603ff3,
+        #956bf7,
+        #ca97fb
+    );
+
+    --gradient_radial: radial-gradient(
+        circle,
+        #00004f,
+        #100872,
+        #201194,
+        #3019b7,
+        #4021d9
+    );
+
+    --gradient_radial2: radial-gradient(
+        circle,
+        #2b13ef,
+        #603ff3,
+        #956bf7,
+        #ca97fb,
+        #ffc3ff
+    );
+
+    --corTitulo: #956bf7;
+}
+
+@keyframes radial {
+    0%{
+        transform: scale(0.05);
+        background-size: 100%;
+    }
+
+    
+
+    100% {
+        transform: scale(1.0);
+        background-size: 300%;
+        
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-size: 100%;
+    }
+
+    100% {
+        background-size: 300%;
+    }
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: basic-sans, sans-serif;
+
+    min-height: 100vh;
+	background: var(--gradient_radial);
+	background-size: 400% 400%;
+    background-position: center;
+    background-attachment: fixed;
+	animation: gradient 7s ease infinite;
+    animation-direction: alternate;
+	height: 100vh;
+}
+
+header {
+    background: linear-gradient(to bottom, #5d59adb8, #4021d9, #3019b7);
+    padding: 1rem;
+    margin: auto;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+h1 {
+    text-align: center;
+    color: #c5d7d9b5;
+    
+    text-transform: uppercase;
+}
+
+section {
+    margin-top: 5%;
+    background: rgba(58, 57, 57, 0.211);
+    border-radius: 10px;
+    padding: 15px;
+    width: 50%;
+    word-wrap: break-word;
+    margin: 3rem auto;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.493);
+}
+
+p.Ts {
+    text-transform: uppercase;
+    padding: 1rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20pt;
+    color: #215ca4;
+    
+}
+
+p {
+    padding: 0.5rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20pt;
+    color: rgb(145, 157, 173);
+    
+}
+
+strong {
+    color: #18bade;
+}
+
+div.container {
+    padding: 0.7rem auto;
+    border: rgb(19, 42, 95) solid 3px;
+    border-radius: 10px;
+}
+div#tec{
+    text-align: justify;
+}
+
+div#breathe1{   
+    border: solid #ffc3ff;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+div#movingn_bt {
+    border-radius: 50%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    padding-left: 50%;
+    padding-right: 50%;
+    background-size: 100%;
+    background-image: var(--gradient_radial2);
+    background-position: center;
+    animation-name: radial;
+    animation-duration: 5.505s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1.5s;
+}
+
+.blink {
+    animation: blink 0.5s infinite;
+}
+
+@keyframes radial {
+    0% {
+        transform: scale(0.05);
+        background-size: 100%;
+    }
+    100% {
+        transform: scale(1.0);
+        background-size: 300%;
+    }
+}
+
+@keyframes blink {
+    to { 
+        opacity: 0;
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.header-sub-title {
+    color: #fff;
+    font-family: "Courier";
+    font-size: 20px;
+    padding: 0.1em;
+}
+
+div#clap {
+    font-size: 60pt;
+}
+
+footer {
+    text-align: center;
+
+    background: linear-gradient(to bottom, #5d59adb8, #4021d9, #3019b7);
+    padding: 1rem;
+    margin: auto;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        width: 95%;
+    }
+}
