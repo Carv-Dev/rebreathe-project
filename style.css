@@ -101,24 +101,24 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.493);
 }
 
-p.Ts {
-    text-transform: uppercase;
-    padding: 1rem;
-    font-family: "Bebas Neue", sans-serif;
+p {
+    padding-bottom: 0.5rem;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 20pt;
-    color: #215ca4;
+    color: rgb(145, 157, 173);
     
 }
 
-p {
-    padding: 0.5rem;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 300;
+p.Ts {
+    text-transform: uppercase;
+    padding-top: 1rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
     font-style: normal;
     font-size: 20pt;
-    color: rgb(145, 157, 173);
+    color: #215ca4;
     
 }
 
@@ -210,5 +210,13 @@ footer {
 @media screen and (max-width: 768px) {
     section {
         width: 95%;
+    }
+
+    p {
+        font-size: 15pt;
+    }
+
+    p.Ts {
+        font-size: 17p8
     }
 }
